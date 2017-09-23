@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\OceanController.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/thomas/Desktop/Folders/Unity Projects/COMP305-F2017-MailPilotDemo/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
