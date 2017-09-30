@@ -22,7 +22,7 @@ public class IslandController : MonoBehaviour {
 
 	private void _reset() {
 		float randomHorizontalPosition = Random.Range (-horizontalBorder, horizontalBorder);
-		Debug.Log (randomHorizontalPosition);
+
 		transform.position = new Vector2 (randomHorizontalPosition, this.resetPosition);
 	}
 
