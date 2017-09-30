@@ -193,6 +193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftBoundary: -291
   RightBoundary: 290
+  height: 0
+  isColliding: 0
 --- !u!1 &1132517588
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3ac15ce7538411a8b70e95332b4679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cloud: {fileID: 1569953370909356, guid: b32415a09bfa64b88a3084f7bb081025, type: 2}
+  Player: {fileID: 1078293185}
+  Island: {fileID: 2012276657}
+  Cloud: {fileID: 114993487345872064, guid: b32415a09bfa64b88a3084f7bb081025, type: 2}
   cloudNumber: 3
   clouds: []
 --- !u!4 &1328226903
@@ -442,6 +446,8 @@ MonoBehaviour:
   resetPosition: 270
   verticalSpeed: 5
   horizontalBorder: 290
+  height: 0
+  isColliding: 0
 --- !u!212 &2012276658
 SpriteRenderer:
   m_ObjectHideFlags: 0

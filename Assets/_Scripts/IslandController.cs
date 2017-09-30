@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IslandController : MonoBehaviour {
+public class IslandController : CustomController {
 	[SerializeField] private float resetPosition;
 	[SerializeField] private float verticalSpeed;
 	[SerializeField] private float horizontalBorder;
@@ -10,6 +10,9 @@ public class IslandController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        this.Height = gameObject.GetComponent<Renderer>().bounds.extents.y;
+        this.IsColliding = false;
+        this.Name = "Island";
 		this._reset ();
 	}
 	
@@ -22,7 +25,6 @@ public class IslandController : MonoBehaviour {
 
 	private void _reset() {
 		float randomHorizontalPosition = Random.Range (-horizontalBorder, horizontalBorder);
-
 		transform.position = new Vector2 (randomHorizontalPosition, this.resetPosition);
 	}
 

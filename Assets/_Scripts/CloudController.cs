@@ -9,7 +9,7 @@ public struct Range {
 }
 
 
-public class CloudController : MonoBehaviour {
+public class CloudController : CustomController{
 
     // FIELDS
     private float _verticalSpeed;
@@ -20,10 +20,12 @@ public class CloudController : MonoBehaviour {
     [SerializeField] private Range horizontalSpeed;
 	[SerializeField] private float horizontalBorder;
 
-
 	// Use this for initialization
 	void Start()
 	{
+        this.Height = gameObject.GetComponent<Renderer>().bounds.extents.y;
+        this.IsColliding = false;
+        this.Name = "Cloud";
 		this._reset();
 	}
 
@@ -42,6 +44,9 @@ public class CloudController : MonoBehaviour {
         this._horizontalSpeed = Random.Range(this.horizontalSpeed.min, this.horizontalSpeed.max);
 		float randomHorizontalPosition = Random.Range(-horizontalBorder, horizontalBorder);
 		transform.position = new Vector2(randomHorizontalPosition, this.resetPosition);
+        //transform.Rotate(0.0f, 0.0f, Random.Range(0, 360));
+        //var randomScale = Random.Range(0.5f, 1.0f);
+        //transform.localScale = new Vector2(randomScale, randomScale);
 	}
 
 	private void _checkBounds()

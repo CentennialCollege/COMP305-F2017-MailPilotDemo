@@ -6,13 +6,18 @@ public class PlayerController : MonoBehaviour {
 
 	// PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++
 	public float LeftBoundary;
-	public float RightBoundary;
+    public float RightBoundary;
+
+    // PRIVATE FIELDS 
+    public float height;
+    public bool isColliding;
 
 	// PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
 
 	// Use this for initialization
 	public void Start () {
-		
+        this.height = gameObject.GetComponent<Renderer>().bounds.extents.y;
+        this.isColliding = false;
 	}
 	
 	// Update is called once per frame
