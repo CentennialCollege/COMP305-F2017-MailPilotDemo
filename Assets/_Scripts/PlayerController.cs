@@ -47,11 +47,11 @@ public class PlayerController : MonoBehaviour {
         if(!other.IsColliding){
             if (collision.gameObject.tag == "Island")
             {
-                gameController.SetScore(gameController.GetScore() + 100);
+                gameController.SetScore(gameController.GetScore() + 100, true);
             }
 
             if(collision.gameObject.tag == "Cloud") {
-                gameController.SetLives(gameController.GetLives() - 1);
+                gameController.SetLives(gameController.GetLives() - 1, true);
             }
 
             other.IsColliding = true;

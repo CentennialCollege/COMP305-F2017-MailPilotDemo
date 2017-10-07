@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour {
     public Text ScoreLabel;
     public Text LivesLabel;
 
+    public AudioSource ThunderSound;
+    public AudioSource YaySound;
+
     public List<GameObject> clouds;
 
     // PRIVATE FIELDS
@@ -28,8 +31,8 @@ public class GameController : MonoBehaviour {
 	void Start () {
         // Initialize Game Objects
 
-        this.SetScore(0);
-        this.SetLives(5);
+        this.SetScore(0, false);
+        this.SetLives(5, false);
 
         this._playerTransform = Player.GetComponent<Transform>();
         this._islandTransform = Island.GetComponent<Transform>();
@@ -77,18 +80,24 @@ public class GameController : MonoBehaviour {
 	}
 
     // GET and SET Methods
-    public void SetScore(int score) {
+    public void SetScore(int score, bool playSound) {
         this._score = score;
         this.ScoreLabel.text = "SCORE: " + score;
+        if(playSound) {
+            this.YaySound.Play();
+        }
     }
 
     public int GetScore() {
         return this._score;
     }
 
-    public void SetLives(int lives) {
+    public void SetLives(int lives, bool playSound) {
         this._lives = lives;
         this.LivesLabel.text = "LIVES: " + lives;
+        if(playSound) {
+            this.ThunderSound.Play();
+        }
     }
 
     public int GetLives() {
