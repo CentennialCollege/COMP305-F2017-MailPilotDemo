@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Island
   - Cloud
+  - ScoreLabel
+  - LivesLabel
   layers:
   - Default
   - TransparentFX

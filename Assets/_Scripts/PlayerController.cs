@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	// PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++
+    // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++
+    public GameController gameController;
 	public float LeftBoundary;
     public float RightBoundary;
 
@@ -46,11 +47,11 @@ public class PlayerController : MonoBehaviour {
         if(!other.IsColliding){
             if (collision.gameObject.tag == "Island")
             {
-                Debug.Log("Island Collision!");
+                gameController.SetScore(gameController.GetScore() + 100);
             }
 
             if(collision.gameObject.tag == "Cloud") {
-                Debug.Log("Cloud Collision!");
+                gameController.SetLives(gameController.GetLives() - 1);
             }
 
             other.IsColliding = true;

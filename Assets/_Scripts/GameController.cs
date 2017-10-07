@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class GameController : MonoBehaviour {
@@ -10,6 +11,9 @@ public class GameController : MonoBehaviour {
     public CloudController Cloud;
     public int cloudNumber;
 
+    public Text ScoreLabel;
+    public Text LivesLabel;
+
     public List<GameObject> clouds;
 
     // PRIVATE FIELDS
@@ -17,10 +21,16 @@ public class GameController : MonoBehaviour {
     private Transform _islandTransform;
     private Transform _cloudTransform;
 
+    private int _score;
+    private int _lives;
+
 	// Use this for initialization
 	void Start () {
         // Initialize Game Objects
-       
+
+        this.SetScore(0);
+        this.SetLives(5);
+
         this._playerTransform = Player.GetComponent<Transform>();
         this._islandTransform = Island.GetComponent<Transform>();
         this._cloudTransform = Cloud.GetComponent<Transform>();
@@ -65,4 +75,23 @@ public class GameController : MonoBehaviour {
         */
 
 	}
+
+    // GET and SET Methods
+    public void SetScore(int score) {
+        this._score = score;
+        this.ScoreLabel.text = "SCORE: " + score;
+    }
+
+    public int GetScore() {
+        return this._score;
+    }
+
+    public void SetLives(int lives) {
+        this._lives = lives;
+        this.LivesLabel.text = "LIVES: " + lives;
+    }
+
+    public int GetLives() {
+        return this._lives;
+    }
 }
