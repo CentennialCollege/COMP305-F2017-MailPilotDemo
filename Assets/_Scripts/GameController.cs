@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameController : MonoBehaviour {
@@ -97,6 +98,10 @@ public class GameController : MonoBehaviour {
         this.LivesLabel.text = "LIVES: " + lives;
         if(playSound) {
             this.ThunderSound.Play();
+        }
+
+        if(this.GetLives() <= 0) {
+            SceneManager.LoadScene("End");
         }
     }
 
