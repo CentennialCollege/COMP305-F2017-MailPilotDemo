@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[System.Serializable]
-public class CustomController:MonoBehaviour  {
-    public float Height { get; set; }
-    public bool IsColliding { get; set; }
-    public string Name { get; set;  }
-}
-
 public class GameController : MonoBehaviour {
     // PUBLIC FIELDS
     public PlayerController Player;
@@ -44,8 +37,6 @@ public class GameController : MonoBehaviour {
 
 
     void checkCollision(CustomController other) {
-
-
 		if (Vector2.Distance(this._playerTransform.position, other.gameObject.transform.position)
 		   < (this.Player.height + other.Height))
 		{
@@ -64,12 +55,14 @@ public class GameController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        /*
         checkCollision(Island);
 
         foreach (var cloud in this.clouds)
         {
             checkCollision(cloud.GetComponent<CloudController>());
         }
+        */
 
 	}
 }

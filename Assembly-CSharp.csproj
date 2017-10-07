@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\CloudController.cs" />
+     <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\IslandController.cs" />
      <Compile Include="Assets\_Scripts\OceanController.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />

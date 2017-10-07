@@ -38,4 +38,29 @@ public class PlayerController : MonoBehaviour {
 		// every frame set the Player's position to the mouse position
 		transform.position = mousePosition; 
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        var other = collision.gameObject.GetComponent<CustomController>();
+
+        if(!other.IsColliding){
+            if (collision.gameObject.tag == "Island")
+            {
+                Debug.Log("Island Collision!");
+            }
+
+            if(collision.gameObject.tag == "Cloud") {
+                Debug.Log("Cloud Collision!");
+            }
+
+            other.IsColliding = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        var other = collision.gameObject.GetComponent<CustomController>();
+        other.IsColliding = false;
+    }
+
 }
