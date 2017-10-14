@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour {
 	public float LeftBoundary;
     public float RightBoundary;
 
-    // PRIVATE FIELDS 
     public float height;
     public bool isColliding;
+
+	public GameObject Bullet;
+	public Transform BulletSpawn;
 
 	// PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -20,10 +22,8 @@ public class PlayerController : MonoBehaviour {
         this.height = gameObject.GetComponent<Renderer>().bounds.extents.y;
         this.isColliding = false;
 	}
-	
-	// Update is called once per frame
-	public void Update () {
 
+	private void _playerMove() {
 		float mouseX = Camera.main.ScreenToWorldPoint (Input.mousePosition).x;
 
 		Vector3 mousePosition = new Vector3(mouseX, -200f, 0f);
@@ -38,6 +38,18 @@ public class PlayerController : MonoBehaviour {
 
 		// every frame set the Player's position to the mouse position
 		transform.position = mousePosition; 
+	}
+
+	private void _playerFire() {
+		if (Input.GetMouseButtonDown (0)) {
+			Instantiate (this.Bullet, BulletSpawn.position, Quaternion.identity);
+		}
+	}
+
+	// Update is called once per frame
+	public void Update () {
+		this._playerMove ();
+		this._playerFire ();
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)

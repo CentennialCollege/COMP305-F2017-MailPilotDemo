@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\BulletController.cs" />
      <Compile Include="Assets\_Scripts\CloudController.cs" />
      <Compile Include="Assets\_Scripts\CustomController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
@@ -60,6 +61,8 @@
      <Compile Include="Assets\_Scripts\Range.cs" />
      <Compile Include="Assets\_Scripts\RestartButtonScript.cs" />
      <Compile Include="Assets\_Scripts\StartButtonScript.cs" />
+     <None Include="Assets\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/thomas/Desktop/Folders/Unity Projects/COMP305-F2017-MailPilotDemo/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

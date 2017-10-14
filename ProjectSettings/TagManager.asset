@@ -8,6 +8,7 @@ TagManager:
   - Cloud
   - ScoreLabel
   - LivesLabel
+  - Bullet
   layers:
   - Default
   - TransparentFX
