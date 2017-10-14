@@ -15,12 +15,20 @@ public class PlayerController : MonoBehaviour {
 	public GameObject Bullet;
 	public Transform BulletSpawn;
 
+	private int _fireDelay;
+	private int _gameTime;
+
+
+	public AudioSource FireSound;
+
 	// PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++
 
 	// Use this for initialization
 	public void Start () {
         this.height = gameObject.GetComponent<Renderer>().bounds.extents.y;
         this.isColliding = false;
+
+		this._fireDelay = 10;
 	}
 
 	private void _playerMove() {
@@ -41,13 +49,19 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void _playerFire() {
-		if (Input.GetMouseButtonDown (0)) {
-			Instantiate (this.Bullet, BulletSpawn.position, Quaternion.identity);
+		if (Input.GetAxis("Fire1") > 0) {
+			// wait 10 frames to fire
+			if ((this._gameTime % this._fireDelay) == 0) {
+				Instantiate (this.Bullet, BulletSpawn.position, Quaternion.identity);
+				this.FireSound.Play ();
+			}
 		}
 	}
 
 	// Update is called once per frame
 	public void Update () {
+		this._gameTime++;
+
 		this._playerMove ();
 		this._playerFire ();
 	}

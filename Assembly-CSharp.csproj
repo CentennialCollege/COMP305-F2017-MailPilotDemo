@@ -54,6 +54,7 @@
      <Compile Include="Assets\_Scripts\BulletController.cs" />
      <Compile Include="Assets\_Scripts\CloudController.cs" />
      <Compile Include="Assets\_Scripts\CustomController.cs" />
+     <Compile Include="Assets\_Scripts\EnemyController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\IslandController.cs" />
      <Compile Include="Assets\_Scripts\OceanController.cs" />

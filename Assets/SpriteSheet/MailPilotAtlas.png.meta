@@ -10,6 +10,9 @@ TextureImporter:
     21300006: plane2
     21300008: plane3
     21300010: bullet
+    21300012: enemyplane1
+    21300014: enemyplane2
+    21300016: enemyplane3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -159,6 +162,48 @@ TextureImporter:
         y: 333
         width: 226
         height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: enemyplane1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 299
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: enemyplane2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 265
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: enemyplane3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 243
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
