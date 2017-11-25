@@ -14,9 +14,12 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject Bullet;
 	public Transform BulletSpawn;
+    public GameObject BigExplosion;
 
 	private int _fireDelay;
 	private int _gameTime;
+
+    
 
 
 	public AudioSource FireSound;
@@ -78,6 +81,7 @@ public class PlayerController : MonoBehaviour {
 
             if(collision.gameObject.tag == "Cloud") {
                 gameController.SetLives(gameController.GetLives() - 1, true);
+                Instantiate(BigExplosion, collision.gameObject.transform);
             }
 
             other.IsColliding = true;

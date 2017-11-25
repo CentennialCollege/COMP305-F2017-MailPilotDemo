@@ -13,6 +13,14 @@ TextureImporter:
     21300012: enemyplane1
     21300014: enemyplane2
     21300016: enemyplane3
+    21300018: bigExplosion1
+    21300020: bigExplosion2
+    21300022: bigExplosion3
+    21300024: bigExplosion4
+    21300026: bigExplosion5
+    21300028: bigExplosion6
+    21300030: bigExplosion7
+    21300032: bigExplosion8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -141,6 +149,118 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: bigExplosion1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 215
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4919355, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 213
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4919355, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 153
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4919355, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 150
+        width: 62
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4919355, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 147
+        width: 61
+        height: 62
+      alignment: 9
+      pivot: {x: 0.48360655, y: 0.47580644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 211
+        width: 62
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5080645, y: 0.5078125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 275
+        width: 52
+        height: 56
+      alignment: 9
+      pivot: {x: 0.52884614, y: 0.52678573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bigExplosion8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 510
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 32.5, y: -31.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
       name: bullet
       rect:
         serializedVersion: 2
@@ -172,8 +292,8 @@ TextureImporter:
       name: enemyplane1
       rect:
         serializedVersion: 2
-        x: 199
-        y: 299
+        x: 193
+        y: 179
         width: 32
         height: 32
       alignment: 0
@@ -186,8 +306,8 @@ TextureImporter:
       name: enemyplane2
       rect:
         serializedVersion: 2
-        x: 199
-        y: 265
+        x: 193
+        y: 145
         width: 32
         height: 32
       alignment: 0
@@ -200,8 +320,8 @@ TextureImporter:
       name: enemyplane3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 243
+        x: 129
+        y: 119
         width: 32
         height: 32
       alignment: 0
@@ -214,7 +334,7 @@ TextureImporter:
       name: island
       rect:
         serializedVersion: 2
-        x: 1
+        x: 65
         y: 212
         width: 62
         height: 63

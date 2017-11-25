@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.5.0</string>
         <key>fileName</key>
-        <string>/Users/thomas/Desktop/Folders/Unity Projects/COMP305-F2017-MailPilotDemo/Assets/SpriteSheet/MailPilot.tps</string>
+        <string>C:/Users/tsili/Desktop/COMP305-F2017-MailPilotDemo/Assets/SpriteSheet/MailPilot.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>unity-texture2d</string>
         <key>textureFileName</key>
-        <filename>../Sprites/MailPilotAtlas.png</filename>
+        <filename>MailPilotAtlas.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -150,7 +150,7 @@
             <key>datafile</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Sprites/MailPilotAtlas.tpsheet</filename>
+                <filename>MailPilotAtlas.tpsheet</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -199,6 +199,29 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">../Sprites/bigExplosion1.png</key>
+            <key type="filename">../Sprites/bigExplosion2.png</key>
+            <key type="filename">../Sprites/bigExplosion3.png</key>
+            <key type="filename">../Sprites/bigExplosion4.png</key>
+            <key type="filename">../Sprites/bigExplosion5.png</key>
+            <key type="filename">../Sprites/bigExplosion6.png</key>
+            <key type="filename">../Sprites/bigExplosion7.png</key>
+            <key type="filename">../Sprites/bigExplosion8.png</key>
+            <key type="filename">../Sprites/plane1.png</key>
+            <key type="filename">../Sprites/plane2.png</key>
+            <key type="filename">../Sprites/plane3.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>16,16,33,33</rect>
+                <key>scale9Paddings</key>
+                <rect>16,16,33,33</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">../Sprites/bullet.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -253,21 +276,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../Sprites/plane1.png</key>
-            <key type="filename">../Sprites/plane2.png</key>
-            <key type="filename">../Sprites/plane3.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>16,16,33,33</rect>
-                <key>scale9Paddings</key>
-                <rect>16,16,33,33</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -280,6 +288,14 @@
             <filename>../Sprites/enemyplane1.png</filename>
             <filename>../Sprites/enemyplane2.png</filename>
             <filename>../Sprites/enemyplane3.png</filename>
+            <filename>../Sprites/bigExplosion1.png</filename>
+            <filename>../Sprites/bigExplosion2.png</filename>
+            <filename>../Sprites/bigExplosion3.png</filename>
+            <filename>../Sprites/bigExplosion4.png</filename>
+            <filename>../Sprites/bigExplosion5.png</filename>
+            <filename>../Sprites/bigExplosion6.png</filename>
+            <filename>../Sprites/bigExplosion7.png</filename>
+            <filename>../Sprites/bigExplosion8.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

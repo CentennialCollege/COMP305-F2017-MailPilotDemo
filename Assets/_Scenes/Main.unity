@@ -136,7 +136,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143597743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -225, y: 210, z: 0}
+  m_LocalPosition: {x: -417, y: 354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698122978}
@@ -269,7 +269,7 @@ RectTransform:
   m_GameObject: {fileID: 698122974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.625, y: 0.625, z: 0.625}
   m_Children:
   - {fileID: 1126673477}
   - {fileID: 143597744}
@@ -631,6 +631,8 @@ MonoBehaviour:
   isColliding: 0
   Bullet: {fileID: 1526940129256740, guid: d1b47d9eb73ba49fb817e29539a60e81, type: 2}
   BulletSpawn: {fileID: 985420602}
+  BigExplosion: {fileID: 1675348154411136, guid: 4b842616ee1a00e40a09c90f4ac95f3a,
+    type: 2}
   FireSound: {fileID: 1078293188}
 --- !u!70 &1078293186
 CapsuleCollider2D:
@@ -788,7 +790,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1126673476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188, y: 210, z: 0}
+  m_LocalPosition: {x: 380, y: 354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698122978}
